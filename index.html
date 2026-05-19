@@ -1513,9 +1513,20 @@ tbody tr:hover .col-sticky { background: var(--surface-alt); }
   .rotation-header-row h3 { font-size: 13px; }
   .rot-quad-body { max-height: 170px; }
   .rot-chip { padding: 4px 8px; font-size: 11px; }
+  .rot-y-btn { padding: 4px 8px; font-size: 11px; }
   .regime-value { font-size: 18px; }
   .summary-card-body { max-height: 260px; }
   .summary-candidates .summary-card-body { max-height: none; }
+
+  /* RRG scatter — horizontal scroll on mobile so chart stays readable */
+  .rotation-scatter-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .rotation-scatter {
+    min-width: 720px;
+    aspect-ratio: 1400 / 620;
+  }
 }
 
 </style>
